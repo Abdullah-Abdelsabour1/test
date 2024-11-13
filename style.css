@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root {
+    --main-color: #2196f3;
+    --second-color: #1787e0
+}
+body {
+    background-color: #eee;
+    height: 100vh;
+}
+.formCard {
+    width: 60%;
+    height: 520px;
+    background-color:white;
+    margin: 100px auto;
+    border-radius: 12px;
+    display: flex;
+    overflow: hidden;
+}
+.formCard .formConatiner , .formCard .infoContainer {
+    flex-basis: 50%;
+}
+.formCard .infoContainer  {
+    color: white ;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+}
+.formCard .infoContainer .info {
+    width: 100%;
+}
+.formCard .infoContainer .info h2  , 
+.formCard .infoContainer .info p {
+  margin-bottom: 10px;
+}
+.formCard .infoContainer .info p {
+    line-height: 1.5;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px ;
+}
+.formCard .infoContainer .info button {
+   border: none;
+   outline: none;
+   padding: 10px 6px;
+   border-radius: 10px;
+   background-color: rgba(0, 0, 255, 0.266);
+   color: white;
+   font-size: 13px;
+   cursor: pointer;
+}
+.formCard .formConatiner {
+  text-align: center;
+  padding: 15px;
+}
+.formCard .formConatiner h2{
+  padding-top: 20px ;   
+}
+.formCard .formConatiner form{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 10px;
+}
+.formCard .formConatiner form input{
+    outline: none;
+    border: none;
+}
+.formCard .formConatiner form .input_group {
+    position: relative;
+    width: 96%; 
+    margin: 0 auto 20px;
+}
+.formCard .formConatiner form .input_group .input {
+    width: 100%;
+    padding: 12px 5px 10px 15px;
+    background-color: #eee;
+    border-radius: 6px;
+}
+.formCard .formConatiner form .input:focus {
+    border: 2px solid var(--main-color);
+    background-color: white;
+} 
+.formCard .formConatiner form .input_group  label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+  font-size: 13px;
+  transition: 0.3s ease;
+}
+.formCard .formConatiner form  .input_group .input:focus + label ,
+.formCard .formConatiner form  .input_group .input:valid + label  
+ {
+   top: 0px;
+   color: var(--main-color);
+   background-color: white;
+   font-size: 14px;
+   font-weight:600;
+}
+
+.formCard .formConatiner form .submit {
+  background-color: var(--main-color);   
+  color: white;
+  padding: 15px 6px;
+  width: 96%; 
+  margin: 0 auto 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transform: 0.3s;
+  font-size: 19px;
+}
+.formCard .formConatiner form .submit:hover {
+   background-color: var(--second-color);
+}
+.formCard .formConatiner  p {
+    background-color: #eee;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.formCard .formConatiner .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+.formCard .formConatiner .icons i {
+  font-size: 22px;
+  cursor: pointer;
+}
+.formCard .formConatiner .icons .blue {
+    color : #4267B2
+}
+.formCard .formConatiner .icons .orange {
+    color : #DB4437;
+}
+.formCard .formConatiner .icons .linkedIn {
+    color : #0077B5;
+}
